@@ -1,0 +1,97 @@
+html{
+	background-color: 	#fbf3eb;
+
+}
+
+body{
+
+
+}
+
+.introduction{
+	grid-area: header;
+}
+
+.nav{
+	grid-area: nav;
+
+}
+
+.wrapper{
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"nav"
+	"content";
+}
+
+/*@media(max-width: 800px){}*/
+/*add media query for mobile view*/
+
+/*Styling the intro area*/
+h1{
+	font-family: 'Merriweather', serif;
+	font-size: 64px;
+	color: #2d2f31;
+	text-align: center;
+
+}
+
+
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #2d2f31;
+	text-align: center;
+	width: 50%;
+	margin:auto;
+
+
+
+}
+
+/*Styling the nav area*/
+
+nav{
+	 
+}
+
+nav ul{
+	list-style-type: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #2d2f31;
+	padding: 0;
+	width: 100%;
+
+}
+
+nav li{
+	display: inline;
+
+
+}
+
+li:first-child a{
+	margin-left: 38%;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	/*outline: none;*/
+	width: 6%;
+	
+	text-align: center;
+	color: #2d2f31;
+	border: 2px;
+	border-style: solid;
+	border-color:#2d2f31;
+
+}
+
+a:hover,a:focus{
+	color: #6aafd9;
+}
+
+/*#6aafd9 accent colour*/
