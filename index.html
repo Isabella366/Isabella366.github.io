@@ -15,19 +15,121 @@
 
 	<nav class="nav">
 		<ul>
-			<li><a href="#Web">Web</a></li>
-			<li><a href="#Python">Python</a></li>
-			<li><a href="#Java">Java</a></li>
-			<li><a href="#Data">Data</a></li>
+				<li id="web_link" class="hidden"><a href="#Web">Web</a></li>
+				<li id="python_link"><a href="#Python">Python</a></li>
+				<li id="java_link"><a href="#Java">Java</a></li>
+				<li id="data_link"><a href="#Data">Data</a></li>
 		</ul>
+
+		<ul class="web_options">
+			<li id="web_personal_projects_link"><a href="#">Personal Projects</a></li>
+			<li id="web_society_link"><a href="#">Society</a></li>
+			<li id="web_university_link"><a href="#">University</a></li>
+		</ul>
+
 	</nav>
 
-	<div class="content">
+	
+
+<!-- 	<div class="content">
+			
+
+	</div> -->
+
+	<div class="first_year_web">
 		<h2>First Year Web Development Module</h2>
-		<p>As part of this module I needed to produce a portfoilo of work and 5 webpages, 2 specificed and 3 of my own design. Here are the three webpages I designed for this module.  </p>		
+		<p>As part of the first-year website development module I created three webpages based around a fictional cafe. The first webpage was to demonstrate the ability to create a complex form. I also included buttons for dark mode and a high contrast mode. If I were to go back and redo this I think I would have added more to the background and in general made it look a little less plain.</p>
+		<video controls>
+			<source src="page3.mp4" type="video/mp4">
+		</video>
+		
+
+		<p>This second webpage was a more general business page. I included link functionality to make it quicker to get to the right section of the page. In addition, I included an Image gallery. I found making the image gallery to be a really great introduction to JavaScript it built on the skills developed in the tutorial work but I also enjoyed adding extra sections such as displaying captions when each photo is displayed.</p>
+		<video controls>
+			<source src="page4.mp4" type="video/mp4">
+		</video>
+		<p>For this finial webpage I used a flex layout which I was less familiar with, this was a good challenge but when I look back at it there is already a lot I would do differently. This webpage also runs horizontally using the flex direction CSS rule, changing the direction of the webpage was really refreshing and introduced me to the variety of layout options instead of the usual scroll from top to bottom.</p>
+		<video controls>
+			<source src="page5.mp4" type="video/mp4">
+		</video>
+
+		<p>If you want to see the full code for any of these pages you can find it here: <a href="https://github.com/Isabella366/portfolio_code/tree/master/website">Website code</a></p>
+
+	</div>
+
+	<div class="Society">
+		<h2>Society Webpage</h2>
+		<p>Part of my role as secretary for the Computing Society has been maintaining the society website. This involves using html and CSS though our society dashboard. This was the first time I had written code for a website I had not created myself, which brought up some different problems. The main issue was with images, in the past I would size my images using the image CSS tag and try to keep them all the same size for consistency. However, on the society website styling the images in this way would affect images outside our editable area (highlighted in blue). The solution was simple I just needed to give class names to everything I wanted to edit and then target the class names instead of general CSS tags.</p>
+
+		<img src="Society_website_screenshot.png">
+
+		<p>The society webpage is maintained through the union cloud dashboard service. The main way of editing the webpage is as a word inspired text editor, which does make it easy to quickly edit the website. However, I find it misses quite a few steps such as setting alt text for images and adding links to icons. This was ultimately why we decided to use code to make it more accessible and make a better impression on our members.</p>
+
+		<h2>Society Email Template</h2>
+		<p>As our Society has grown, we have wanted to move away from using the default templates for emails, mainly to try and create a more professional and cohesive appearance. Whilst its nothing fancy it helps us make a good first impression on our new members as this an email is often the first communication, they will receive from us once they have joined.</p>
+
+		<img src="Society_email_template_screenshot.png">
+
+		<img src="Society_email_code.png">
+
+		<p>Having this as a template helps speed up shorter emails and provide a good framework for our longer newsletters.</p>
+
+		<video controls>
+			<source src="September_newsletter_draft.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<div class="web_personal_projects">
+		<h2>Personal Projects</h2>
+		<p>I really like the idea of a website that is more of an interactive media experience, this project is an excuse for me to explore that concept and learn some new skills.</p>
+			 <video controls>
+			 	<source src="bar_left_right.mp4" type="video/mp4">
+			 </video>  
+		 <p>The general idea layout would look like above. I have made the environment in Blender using 3D modelling. I am still a beginner in this and need to look at tutorials to work out how to do a lot of it, but it has been an interesting skill to explore over lockdown. I plan to add a bartender to this scene and have them cleaning a glass as a short video which can then loop. When the user clicks on a nav link I would like to change the video that is playing to one of the bartender placing a menu on the bar and the camera walking in and tilting to view this menu. I'd then use the Z axis in CSS to display the menu over the video, I expect this is going to require some JavaScript to get the webpage to wait until the video has finished and then display the menu.<p/>
+
+		 <video controls>
+		 	<source src="bar_concept.mp4" type="video/mp4">
+		 </video>
+
+		 <p> Accessibility is going to be an issue here, so I'm trying to think of a way of providing a similar experience if the user is using a screen reader (the videos have no sound so I'm thinking of using the transcript to describe what’s going on somewhere between subtitles and a choice your own adventure description of the room). Additionally, videos can be harder to load if the user is using an older browser or has a slow internet connection. I am planning on looking into how I can optimise the videos, provide multiple file formats and as a fall back provide a version without the videos. This video-less style may also need to be used for mobile or at least ask the user on a loading screen if they want to view the interactive website or if they just need the information.</p>
+
+		 <img src="planning_doc.png" alt="A story board "> 
+
+		 <p> I have included below my planning in a storyboard-esque style so hopeful you can see what I would like the finished project to look like. This website is not live anywhere at the moment, I would like to have a version of it somewhere on this webpage, but it needs a little more work before I'm happy to put it out there.</p>
+	</div>
+
+	<div class="Python">
+		<h2>Python Projects</h2>
+		<P>I started learning python before I went to university as a way of working out if coding was for me. As part of that process I used books like “Invent Your Own Computer Games With Python" by Al Sweigart and "Python Crash Course" by Eric Mattheas. As I have learnt other object-oriented programming languages, I have felt my python skills have also improved through the common themes to OOP. Recently I decided to make a small text-based card game of blackjack. </P>
+
+		<video controls>
+			<source src="Python_demo.mp4" type="video/mp4">
+		</video>
+
+		<p>I had been reading "Hands on Programming with R" by Garret Grolemund which discusses the best way to win in gambling is to be the casino. So, I felt the best way to understand the examples about blackjack and the statistics around the game was to build the game. Below you can see the output of what the games does, and I've also put the code in a repository if you want to see it. <a href="https://github.com/Isabella366/portfolio_code/tree/master/Python">Here</a> I'd like to refactor this code into classes especially for the main deck, as this will make it easier to use one deck and alter it for different games, instead of needing to reinvent it each time. I also plan to add other games such as solitaire and snap, as well as adding scoring and features like double down for blackjack.</P>
+		
+	</div>
+
+
+	<div class="Java">
+		<h2>Java University Work</h2>
+		<p>For Fundamentals of Computer Programming I needed to make two programs in Java. These programs needed to take in information about a book and then either store it and then present it to the user in a clean format. Or to search a CSV and tell the user is it found any information matching what they requested. Code for this project can be found<a href="https://github.com/Isabella366/portfolio_code/tree/master/Java"> here. </a></p>
+
+		<p>This was the first time I had used Java, as it is a strongly typed language remembering to give it the types for variables was different but easy to get used to. Overall, I enjoyed using the language and would like to do some projects around it to develop my skills further. </p>
+
+
+	</div>
+
+	<div class="Data">
+		<p>Content Coming Soon.</p>
+	</div>
+
+
+
 
 	</div>
 
 	</div>
+	<script src="script.js"></script>
 </body>
 </html>

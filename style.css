@@ -1,5 +1,5 @@
 html{
-	background-color: 	#fbf3eb;
+	background-color:#fbf3eb;
 
 }
 
@@ -31,20 +31,20 @@ body{
 /*Styling the intro area*/
 h1{
 	font-family: 'Merriweather', serif;
-	font-size: 64px;
+	font-size: 108px;
 	color: #2d2f31;
 	text-align: center;
 
 }
 
-
 p{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 22px;
 	color: #2d2f31;
 	text-align: center;
 	width: 50%;
 	margin:auto;
+	padding: 5px;
 
 
 
@@ -59,39 +59,97 @@ nav{
 nav ul{
 	list-style-type: none;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 18px;
 	color: #2d2f31;
 	padding: 0;
 	width: 100%;
+}
+.web_options li:first-child a{
+	margin-left: 32%;
 
 }
+
+.web_options{
+	display: none;
+}
+
 
 nav li{
 	display: inline;
-
-
-}
-
-li:first-child a{
-	margin-left: 38%;
 }
 
 nav a{
 	display: inline-block;
 	text-decoration: none;
 	/*outline: none;*/
-	width: 6%;
-	
+	width: 12%;	
 	text-align: center;
 	color: #2d2f31;
 	border: 2px;
 	border-style: solid;
 	border-color:#2d2f31;
 
+
+}
+
+li:first-child a{
+	margin-left: 26%;
 }
 
 a:hover,a:focus{
 	color: #6aafd9;
 }
 
+
+
 /*#6aafd9 accent colour*/
+
+/*Styling the content area*/
+h2{
+	font-family: 'Merriweather', serif;
+	color: #2d2f31;
+	text-align: center;
+}
+
+video{
+	display: block;
+	width: 50%;
+	margin: auto;
+	padding: 5px;
+
+}
+
+img{
+	display: block;
+	width: 50%;
+	margin:auto;
+	padding: 5px;
+}
+
+.first_year_web{
+	display: none;
+}
+
+.Society{
+	display: none;
+}
+
+.web_personal_projects{
+	display: none;
+}
+
+.Python{
+	display: none;
+}
+
+.Java{
+	display: none;
+}
+
+.Data{
+	display: none;
+}
+.not_hidden{
+	display:inline;
+}
+
