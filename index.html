@@ -27,14 +27,14 @@
 			<li id="web_university_link"><a href="#">University</a></li>
 		</ul>
 
+		<ul class="data_options">
+			<li id="R_projects_link"><a href="#">R</a></li>
+			<li id="Sql_link"><a href="#">Sql</a></li>
+		</ul>
+
 	</nav>
 
-	
 
-<!-- 	<div class="content">
-			
-
-	</div> -->
 
 	<div class="first_year_web">
 		<h2>First Year Web Development Module</h2>
@@ -61,16 +61,16 @@
 		<h2>Society Webpage</h2>
 		<p>Part of my role as secretary for the Computing Society has been maintaining the society website. This involves using html and CSS though our society dashboard. This was the first time I had written code for a website I had not created myself, which brought up some different problems. The main issue was with images, in the past I would size my images using the image CSS tag and try to keep them all the same size for consistency. However, on the society website styling the images in this way would affect images outside our editable area (highlighted in blue). The solution was simple I just needed to give class names to everything I wanted to edit and then target the class names instead of general CSS tags.</p>
 
-		<img src="Society_website_screenshot.png">
+		<img src="Society_website_screenshot.png" alt="A screenshot of the Computing Society website.Shows a list of current committee members and links to social media">
 
 		<p>The society webpage is maintained through the union cloud dashboard service. The main way of editing the webpage is as a word inspired text editor, which does make it easy to quickly edit the website. However, I find it misses quite a few steps such as setting alt text for images and adding links to icons. This was ultimately why we decided to use code to make it more accessible and make a better impression on our members.</p>
 
 		<h2>Society Email Template</h2>
 		<p>As our Society has grown, we have wanted to move away from using the default templates for emails, mainly to try and create a more professional and cohesive appearance. Whilst its nothing fancy it helps us make a good first impression on our new members as this an email is often the first communication, they will receive from us once they have joined.</p>
 
-		<img src="Society_email_template_screenshot.png">
+		<img src="Society_email_template_screenshot.png" alt="An image of an email template, shows a logo at the top center, and then some placehodler text and signoff">
 
-		<img src="Society_email_code.png">
+		<img src="Society_email_code.png" alt="An image showing on the left hand side the html5 code and on the right the css code.">
 
 		<p>Having this as a template helps speed up shorter emails and provide a good framework for our longer newsletters.</p>
 
@@ -82,14 +82,16 @@
 	<div class="web_personal_projects">
 		<h2>Personal Projects</h2>
 		<p>I really like the idea of a website that is more of an interactive media experience, this project is an excuse for me to explore that concept and learn some new skills.</p>
-			 <video controls>
-			 	<source src="bar_left_right.mp4" type="video/mp4">
-			 </video>  
-		 <p>The general idea layout would look like above. I have made the environment in Blender using 3D modelling. I am still a beginner in this and need to look at tutorials to work out how to do a lot of it, but it has been an interesting skill to explore over lockdown. I plan to add a bartender to this scene and have them cleaning a glass as a short video which can then loop. When the user clicks on a nav link I would like to change the video that is playing to one of the bartender placing a menu on the bar and the camera walking in and tilting to view this menu. I'd then use the Z axis in CSS to display the menu over the video, I expect this is going to require some JavaScript to get the webpage to wait until the video has finished and then display the menu.<p/>
 
-		 <video controls>
-		 	<source src="bar_concept.mp4" type="video/mp4">
-		 </video>
+			<video controls>
+			 	<source src="bar_left_right.mp4" type="video/mp4">
+			 </video> 
+
+		<p>The general idea layout would look like above. I have made the environment in Blender using 3D modelling. I am still a beginner in this and need to look at tutorials to work out how to do a lot of it, but it has been an interesting skill to explore over lockdown. I plan to add a bartender to this scene and have them cleaning a glass as a short video which can then loop. When the user clicks on a nav link I would like to change the video that is playing to one of the bartender placing a menu on the bar and the camera walking in and tilting to view this menu. I'd then use the Z axis in CSS to display the menu over the video, I expect this is going to require some JavaScript to get the webpage to wait until the video has finished and then display the menu.</p>
+
+		 	<video controls>
+		 		<source src="bar_concept.mp4" type="video/mp4">
+		 	</video>
 
 		 <p> Accessibility is going to be an issue here, so I'm trying to think of a way of providing a similar experience if the user is using a screen reader (the videos have no sound so I'm thinking of using the transcript to describe what’s going on somewhere between subtitles and a choice your own adventure description of the room). Additionally, videos can be harder to load if the user is using an older browser or has a slow internet connection. I am planning on looking into how I can optimise the videos, provide multiple file formats and as a fall back provide a version without the videos. This video-less style may also need to be used for mobile or at least ask the user on a loading screen if they want to view the interactive website or if they just need the information.</p>
 
@@ -106,7 +108,7 @@
 			<source src="Python_demo.mp4" type="video/mp4">
 		</video>
 
-		<p>I had been reading "Hands on Programming with R" by Garret Grolemund which discusses the best way to win in gambling is to be the casino. So, I felt the best way to understand the examples about blackjack and the statistics around the game was to build the game. Below you can see the output of what the games does, and I've also put the code in a repository if you want to see it. <a href="https://github.com/Isabella366/portfolio_code/tree/master/Python">Here</a> I'd like to refactor this code into classes especially for the main deck, as this will make it easier to use one deck and alter it for different games, instead of needing to reinvent it each time. I also plan to add other games such as solitaire and snap, as well as adding scoring and features like double down for blackjack.</P>
+		<p>I had been reading "Hands on Programming with R" by Garret Grolemund which discusses the best way to win in gambling is to be the casino. So, I felt the best way to understand the examples about blackjack and the statistics around the game was to build the game. Below you can see the output of what the games does, and I've also put the code in a repository if you want to see it <a href="https://github.com/Isabella366/portfolio_code/tree/master/Python">here.</a> I'd like to refactor this code into classes especially for the main deck, as this will make it easier to use one deck and alter it for different games, instead of needing to reinvent it each time. I also plan to add other games such as solitaire and snap, as well as adding scoring and features like double down for blackjack.</P>
 		
 	</div>
 
@@ -114,6 +116,10 @@
 	<div class="Java">
 		<h2>Java University Work</h2>
 		<p>For Fundamentals of Computer Programming I needed to make two programs in Java. These programs needed to take in information about a book and then either store it and then present it to the user in a clean format. Or to search a CSV and tell the user is it found any information matching what they requested. Code for this project can be found<a href="https://github.com/Isabella366/portfolio_code/tree/master/Java"> here. </a></p>
+
+		<video controls>
+			<source src="Java_demo.mp4" type="video/mp4">
+		</video>
 
 		<p>This was the first time I had used Java, as it is a strongly typed language remembering to give it the types for variables was different but easy to get used to. Overall, I enjoyed using the language and would like to do some projects around it to develop my skills further. </p>
 
@@ -124,12 +130,22 @@
 		<p>Content Coming Soon.</p>
 	</div>
 
+	<div class="R_projects">
+		<p>R</p>
+		<p>In May 2020 I completed a Coursera course called 'The Data Scientist's Toolkit' this introduced R, R studio and Github. The focus was on getting the tools set up and configured before understanding what they could be used for. I found the introduction to Github very useful although I do not currently have reason to use Github very frequently it has been extremely useful in creating this portfolio and gathering my coding projects into one place. </p>
+
+		<img src="Coursera_data_toolkit.jpg" alt="A certificate showing the coursera coure The data Scientists toolkit was completed in May 2020">
+
+		<p>More recently I have been working through Garret Grolemund's book 'Hands on Programming with R' I am about 2 thirds of the way through and have been working through the examples and exercises given in the book. I would still describe myself as a complete beginning in R but as it’s a language that is increasing in popularity and use, I want to try and learn more about it from a personal interest perspective. </p>
+
+	</div>
+
 
 
 
 	</div>
 
-	</div>
+
 	<script src="script.js"></script>
 </body>
 </html>
