@@ -61,7 +61,7 @@ body{
 /*Styling the intro area*/
 h1{
 	font-family: 'Merriweather', serif;
-	font-size: 108px;
+	font-size: 125px;
 	color: #2d2f31;
 	text-align: center;
 
@@ -69,7 +69,7 @@ h1{
 
 p{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 22px;
+	font-size: 26px;
 	color: #2d2f31;
 	text-align: center;
 	width: 50%;
@@ -90,7 +90,7 @@ nav{
 nav ul{
 	list-style-type: none;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
+	font-size: 22px;
 	color: #2d2f31;
 	padding: 0;
 	width: 100%;
